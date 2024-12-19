@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initialsacle=1.0">
+    <title>Porsche</title>
+    <link type = "image/x-icon" href="../img/logo.png" rel = "shortcut icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js" defer=""></script>
+</head>
+
+
+<body>
+    
+    <header>
+
+        <div class="title">
+            <a href="../index.html#section2"><img src="../img/logo2.png"></a>
+            <h1>PORSCHE</h1>
+        </div>
+
+
+    </header>
+
+    <div class="wrapper">
+        <div class="text">
+            <h2>Выберите свой город</h2>
+            <p>Мы покажем вам автосалоны в вашем городе</p>
+        </div>
+
+        <div class="selector">
+
+            <select id="image-selector">
+                <option value="">Выберите город</option>
+                <option value="img/Saint-Petersburg.png">Санкт-Петербург</option>
+                <option value="img/Moscow.png">Москва</option>
+                <option value="img/Samara.png">Самара</option>
+            </select>
+        
+            <div id="overlay"></div>
+        
+            <div id="image-display">
+                <button id="close-btn">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section id="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="../img/Porsche-718.JPG">
+            </div>
+            <div class="slide">
+                <img src="../img/Porsche-911.JPG">
+            </div>
+            <div class="slide">
+                <img src="../img/Porsche-Cayenne.JPG">
+            </div>
+            <div class="slide">
+                <img src="../img/Porsche-Macan.JPG">
+            </div>
+            <div class="slide">
+                <img src="../img/Porsche-Panamera.jpg">
+            </div>
+            <div class="slide">
+                <img src="../img/Porsche-Taycan.JPG">
+            </div>
+        </div>
+        <button class="prev-button">&#10094;</button>
+        <button class="next-button">&#10095;</button>
+    </section>
+    
+    <footer>
+        <div class="info">
+
+        
+            <form class="form">
+                <h2 class="form__heading">Свяжись со мной!</h2>
+                <div class="form__input-field">
+                    <label for="name">Имя:</label>
+                    <input name="name" class="form__input"/>
+                </div>
+                <div class="form__input-field">
+                    <label for="tel">Номер телефона:</label>
+                    <input type="tel" name="tel" class="form__input"/>
+                </div>
+                <button class="form__button">Отправить</button>
+            </form>
+            
+            <h4>Социальные сети</h4>
+
+            <div class="social-icons">
+                <a href="https://imgur.com/a/p0RtJS5" class="social-icon"><img src="../img/LinkedIn.png"></a>
+                <a href="https://imgur.com/a/5m5S5kO" class="social-icon"><img src="../img/instagram.jpg"></a>
+                <a href="https://imgur.com/a/Jh6KLYA" class="social-icon"><img src="../img/x.png"></a>
+                <a href="https://www.youtube.com/@Porsche/featured" class="social-icon"><img src="../img/youtube.png"></a>
+            </div>
+
+        </div>
+
+        <hr>
+        <p>PORSCHE</p>
+    </footer>
+
+
+    <script>
+        const imageSelector = document.getElementById('image-selector');
+        const imageDisplay = document.getElementById('image-display');
+        const overlay = document.getElementById('overlay');
+        const closeBtn = document.getElementById('close-btn');
+
+        imageSelector.addEventListener('change', () => {
+            const selectedValue = imageSelector.value;
+
+            if (selectedValue) {
+                const img = document.createElement('img');
+                img.src = selectedValue;
+                img.alt = 'Selected Image';
+
+                imageDisplay.innerHTML = '';
+                imageDisplay.appendChild(closeBtn);
+                imageDisplay.appendChild(img);
+
+                overlay.style.display = 'block';
+                imageDisplay.style.display = 'flex';
+            }
+        });
+
+        closeBtn.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            imageDisplay.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            imageDisplay.style.display = 'none';
+        });
+    </script>
+
+
+
+</body>

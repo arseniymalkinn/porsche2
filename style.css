@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.title img {
+    width: 80px;
+    height: 80px;
+}
+
+.title {
+    margin-left: -350px;
+    margin-top: -955px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 96%;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.title h1 {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+
+header nav {
+    float: right;
+    width: 30%;
+}
+
+header nav ul {
+    margin-right: 8px;
+    margin-top: -80px;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    font-family: "Tektur", sans-serif;
+}
+
+header img {
+    width: 23px;
+    height: 25px;
+}
+
+header nav ul li {
+    display: inline-block
+}
+
+header nav ul li a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li:not(.btn) a:hover {
+    border-bottom: 5px solid rgb(138, 0, 0);
+}
+
+.slogan {
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(138, 0, 0);
+    position: absolute;
+    left: 16vh;
+    top: 57vh;
+}
+
+header .slider {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 55vh;
+    border-radius: 20px;
+}
+
+
+header .slides {
+    position: relative;
+    margin-top: -83px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 108.7vh;
+}
+
+/*модельный ряд*/
+
+.models img {
+    height: 80vh;
+}
+
+.models {
+    padding-top: 140px;
+    background: linear-gradient(135deg, rgba(105, 105, 105, 1) 0%, rgba(100, 0, 0, 0.95) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: "Tektur", sans-serif;
+}
+.models h3 {
+    text-align: center;
+    font-family: "Tektur", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+
+
+.models img {
+    width: 630px;
+    border-radius: 10px;
+}
+
+.models .cars {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 80px;
+    row-gap: 70px;
+}
+
+.models .cars span {
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 760px;
+    left: 35px;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(138, 0, 0);
+}
+
+.models .cars {
+    overflow: hidden;
+    position: relative;
+}
+
+.models img {
+    transition: transform 0.5s ease;
+}
+
+.models img:hover {
+    transform: scale(1.025);
+}
+
+
+.order {
+    background: #9b9b9b;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 0;
+    width: 80%;
+    display: flex;
+    justify-self: space-around;
+    align-items: center;
+}
+
+.order .info {
+    margin-left: 3%;
+}
+
+
+.choise {
+    float: right;
+    width: 17%;
+}
+
+.choise ul {
+    right: 150px;
+    margin-top: 0px;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.choise li {
+    display: inline-block
+}
+
+.choise li a {
+    font-family: "Tektur", sans-serif;
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.order button {
+    background-color:rgb(138, 0, 0);
+    padding: 13px 17px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 695px;
+    color: #fff;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+}
+ 
+.order button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #1e1e1e; 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width:100%;
+}
+
+footer .info {
+    margin-top: 10px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+  
+.social-icon img {
+    width: 52px;
+    height: 52px;
+    vertical-align: middle;
+  }
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #9b9b9b;
+}
+
+footer > p {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size:52px;
+    font-weight: 700;
+}
+
+
+button.prev-button, button.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-5%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+button.prev-button {
+    left: 10px;
+}
+
+button.next-button {
+    right: 10px;
+}
+
+button.prev-button:hover, button.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0 100px;
+}
+
+.form__heading {
+    color: white;
+}
+
+.form__input {
+    color: #fff;
+    width: 90%;
+    max-width: 500px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 0 auto 10px;
+    height: 30px;
+}
+
+.form__input-field {
+    color: white;
+    align-self: center;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form__button {
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    border: 1px solid grey;
+    height: 40px;
+    margin: 20px auto 0;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.05);
+}

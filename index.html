@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initialsacle=1.0">
+    <title>Porsche</title>
+    <link type = "image/x-icon" href="img/logo.png" rel = "shortcut icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+</head>
+
+
+<body>
+    
+    <header>
+
+        <section id="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/background1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/background2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/background3.jpg">
+                </div>
+            </div>
+            <button class="prev-button">&#10094;</button>
+            <button class="next-button">&#10095;</button>
+        </section>
+        
+        <div class="title">
+            <img src="img/logo2.png">
+            <h1>PORSCHE</h1>
+        </div>
+
+        <div class="slogan">
+            Overfeel.
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#section1">Модельный ряд</a></li>
+                    <li><a href="#section2">Купить</a></li>
+                    <li class="btn" onclick="LogIn()"><a href="#"> <img src="img/user.png"> </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    
+
+    <div class="models">
+
+        <section id="section1"></section>
+        
+        <h3>Модельный ряд</h3>
+        
+        <div class="cars">
+            <div class="block">
+                <img src="./img/Porsche-718.JPG">
+                <span>718</span>
+            </div>
+            <div class="block">
+                <img src="./img/Porsche-911.JPG">
+                <span>911</span>
+            </div>
+            <div class="block">
+                <img src="./img/Porsche-Taycan.JPG">
+                <span>Taycan</span>
+            </div>
+            <div class="block">
+                <img src="./img/Porsche-Panamera.jpg">
+                <span>Panamera</span>
+            </div>
+            <div class="block">
+                <img src="./img/Porsche-Macan.JPG">
+                <span>Macan</span>
+            </div>
+            <div class="block">
+                <img src="./img/Porsche-Cayenne.JPG">
+                <span>Cayenne</span>
+        </div>
+
+    <div class="order">
+        
+        <section id="section2"></section>
+
+        <div class="info">
+           <h2>Ближайший автосалон</h2>
+           <p>Мы подаскажем, где находится ближайший автосалон</p>
+        </div>
+
+        <div class="choise">
+            <ul>
+                <li><a href="Russia/Russia.html"><button>Все автосалоны</button></a></li>
+                <li><a href="city/city.html"><button>Выбрать город</button></a></li>            
+            </ul>
+         </div>
+
+    </div>
+
+    <div class="feedback">
+
+    </div>
+
+    <footer>
+        <div class="info">
+
+            <form class="form">
+                <h2 class="form__heading">Свяжись со мной!</h2>
+                <div class="form__input-field">
+                    <label for="name">Имя:</label>
+                    <input name="name" class="form__input"/>
+                </div>
+                <div class="form__input-field">
+                    <label for="tel">Номер телефона:</label>
+                    <input type="tel" name="tel" class="form__input"/>
+                </div>
+                <button class="form__button">Отправить</button>
+            </form>
+        
+            
+            <h4>Социальные сети</h4>
+
+            <div class="social-icons">
+                <a href="https://imgur.com/a/p0RtJS5" class="social-icon"><img src="img/LinkedIn.png"></a>
+                <a href="https://imgur.com/a/5m5S5kO" class="social-icon"><img src="img/instagram.jpg"></a>
+                <a href="https://imgur.com/a/Jh6KLYA" class="social-icon"><img src="img/x.png"></a>
+                <a href="https://www.youtube.com/@Porsche/featured" class="social-icon"><img src="img/youtube.png"></a>
+            </div>
+
+        </div>
+
+        <hr>
+        <p>PORSCHE</p>
+    </footer>
+
+
+
+    <script>
+
+        function LogIn()
+        {
+            alert("Типо логиниться");
+        }
+        
+    </script>
+
+
+</body>
